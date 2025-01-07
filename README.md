@@ -1,8 +1,17 @@
-#Analyzing Air Pollution and Associated Burden of Disease in Ethiopia
+# Analyzing Air Pollution and Associated Burden of Disease in Ethiopia
+---
 
-This Jupyter notebook details data analyses examining air pollution exposure and its associated burden of disease in Ethiopia. The project utilizes various libraries including Pandas, Geopandas, Matplotlib, and Linearmodels to conduct statistical analyses, generate visuals, and gain policy insights and recommendations.
+This Jupyter notebook details data analyses examining air pollution exposure and its associated burden of disease in Ethiopia, especially in the context of urbanization. The project utilizes various Python libraries including Pandas, Geopandas, Matplotlib, and Linearmodels to clean data, conduct statistical analyses, produce visuals, and gain policy insights and recommendations regarding this topic.
 
-The datasets used for this project are all publically accessible and can be found along with any available documentation below:
+The project aims to answer three main questions:
+
+1. **How has Ethiopia's population trended over time and geographically, especially in the context of urbanization?**
+   
+2. **What is the air pollution exposure in the country, both outside and in households? How has this changed historically?**
+   
+3. **What is the associated burden of disease caused by air pollution in Ethiopia? Have health outcomes improved or worsened?**
+
+The datasets used for this project are all publicly accessible and can be found along with any available documentation below:
 
 1) [Annual Population Estimates - UN Population Fund](https://pdp.unfpa.org/?_ga=2.228984607.246803807.1734063039-200135835.1734063039&country=231&data_id=dataSource_8-6%3A75%2CdataSource_8-1%3A2%2B10%2B11%2CdataSource_8-2%3A727%2CdataSource_8-5%3A2849&page=Explore-Indicators)
 2) [World Population Rate of Change - UN DESA](https://population.un.org/dataportal/data/indicators/51/locations/900/start/1980/end/2023/table/pivotbylocation?df=9468e38c-482d-4a1c-82b8-a5672388c740)
