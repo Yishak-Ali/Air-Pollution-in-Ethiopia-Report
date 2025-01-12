@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This Python data project aims to examining air pollution exposure and its associated burden of disease in Ethiopia, especially in the context of urbanization, by addressing the three main questions below: 
+This Python data project aims to examine air pollution exposure and its associated burden of disease in Ethiopia, especially in the context of urbanization, by addressing the three main questions below: 
 
 1. **How has Ethiopia's population trended over time and geographically, especially in the context of urbanization?**
    
@@ -18,15 +18,19 @@ The project ultimately seeks to provide data-informed policy and investment dire
 
 The project analyses highlighted important trends with regard to urbanization and demographic settlement, outdoor and indoor air pollution exposure, and associated health outcomes.
 
-### Identified areas of focus for policy and investment:
+**Identified areas of focus for policy and investment:**
 
 - Low urbanization rate and high urban slum rate
 - Unsafe ambient air quality exasperated by emissions from an aged vehicle fleet
 - High exposure to household pollution due to limited access to clean cooking fuels and technologies
 
-<img src="Visualizations/urban_trends.png" alt="urban_trends" width="200"/>
+**Highight Visualizations**
 
-### PowerPoint Presentation - Summarized Results:
+<img src="Visualizations/urban_trends.png" alt="urban_trends" width="1000"/>
+<img src="Visualizations/spatial_pm.png" alt="spatial_pm" width="1000"/>
+<img src="Visualizations/hh_exposure.png" alt="urban_trends" width="1000"/>
+
+**PowerPoint Presentation - Summarized Results:**
 
 [Air Pollution in Ethiopa - Short Form](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/blob/main/Air%20Pollution%20in%20Ethiopia%20-%20Short%20Form.pptx)
 
@@ -43,7 +47,7 @@ Python with the following libraries:
 
 ## Data Sources
 
-The datasets used for this project are all publicly accessible and can be found along with any available documentation below:
+The [datasets](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/tree/main/Data) used for this project are all publicly accessible and can be found along with any available documentation below:
 
 1) [Annual Population Estimates - UN Population Fund](https://pdp.unfpa.org/?_ga=2.228984607.246803807.1734063039-200135835.1734063039&country=231&data_id=dataSource_8-6%3A75%2CdataSource_8-1%3A2%2B10%2B11%2CdataSource_8-2%3A727%2CdataSource_8-5%3A2849&page=Explore-Indicators)
 2) [World Population Rate of Change - UN DESA](https://population.un.org/dataportal/data/indicators/51/locations/900/start/1980/end/2023/table/pivotbylocation?df=9468e38c-482d-4a1c-82b8-a5672388c740)
