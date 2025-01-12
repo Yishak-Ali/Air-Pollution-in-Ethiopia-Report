@@ -4,11 +4,11 @@
 
 This Python data project aims to examine air pollution exposure and its associated burden of disease in Ethiopia, especially in the context of urbanization, by addressing the three main questions below: 
 
-1. **How has Ethiopia's population trended over time and geographically, especially in the context of urbanization?**
+1. How has Ethiopia's population trended over time and geographically, especially in the context of urbanization?
    
-2. **What is the air pollution exposure in the country, both outside and in households? How has this changed historically?**
+2. What is the air pollution exposure in the country, both outside and in households? How has this changed historically?
    
-3. **What is the associated burden of disease caused by air pollution in Ethiopia? Have health outcomes improved or worsened?**
+3. What is the associated burden of disease caused by air pollution in Ethiopia? Have health outcomes improved or worsened?
 
 **Public Health and Policy Use Case:**
 
@@ -24,10 +24,11 @@ The project analyses highlighted important trends with regard to urbanization an
 - Unsafe ambient air quality exasperated by emissions from an aged vehicle fleet
 - High exposure to household pollution due to limited access to clean cooking fuels and technologies
 
-**Highight Visualizations**
+**Highlight Visualizations**
 
 <img src="Visualizations/urban_trends.png" alt="urban_trends" width="1000"/>
 <img src="Visualizations/spatial_pm.png" alt="spatial_pm" width="1000"/>
+<img src="Visualizations/addis_ababa_exposure.png" alt="aa_pm" width="1000"/>
 <img src="Visualizations/hh_exposure.png" alt="urban_trends" width="1000"/>
 
 **PowerPoint Presentation - Summarized Results:**
