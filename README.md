@@ -27,7 +27,7 @@ The project analyses highlighted important trends with regard to urbanization an
 **Highlight Visualizations**
 
 <img src="Visualizations/urban_trends.png" alt="urban_trends" width="1000"/>
-<img src="Visualizations/spatial_pm.png" alt="spatial_pm" width="1000"/>
+<img src="Visualizations/spatial_pm.png" alt="spatial_pm" width="700"/>
 <img src="Visualizations/addis_ababa_exposure.png" alt="aa_pm" width="1000"/>
 <img src="Visualizations/hh_exposure.png" alt="urban_trends" width="1000"/>
 
