@@ -24,7 +24,7 @@ The project analyses highlighted important trends with regard to urbanization an
 - Unsafe ambient air quality exasperated by emissions from an aged vehicle fleet
 - High exposure to household pollution due to limited access to clean cooking fuels and technologies
 
-**Highlight Visualizations**
+**Highlight Visualizations:**
 
 <img src="Visualizations/urban_trends.png" alt="urban_trends" width="1000"/>
 <img src="Visualizations/spatial_pm.png" alt="spatial_pm" width="700"/>
