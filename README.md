@@ -14,7 +14,9 @@ This Python data project and report aims to examine air pollution exposure and i
 
 **Public Health and Policy Use Case:**
 
-The project ultimately seeks to provide data-informed policy and investment directions for the developing nation. In understanding where pollution exposure is highest, why that might be the case, and what impact it has on public health, policy directives and fund allocations can be more effectively geared to tackle air pollution in the country. The main body of work is structured as a report with research pulling data from multiple sources, key figures highlighting trends, and detailed write-ups explaining figures and walking through findings and policy recommendations. For a condensed PPT of the important findings, see [Air Pollution in Ethiopa - Short Form](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/blob/main/Air%20Pollution%20in%20Ethiopia%20-%20Short%20Form.pptx).
+The project ultimately seeks to provide data-informed policy and investment directions for the developing nation. In understanding where pollution exposure is highest, why that might be the case, and what impact it has on public health, policy directives and fund allocations can be more effectively geared to tackle air pollution in the country. 
+
+The main body of work is structured as a report with research pulling data from multiple sources, key figures highlighting trends, and detailed write-ups explaining figures and walking through findings and policy recommendations. For a condensed PPT of the important findings, see [Air Pollution in Ethiopia - Short Form](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/blob/main/Air%20Pollution%20in%20Ethiopia%20-%20Short%20Form.pptx).
 
 ## Key Findings
 
@@ -40,14 +42,14 @@ Variables:
 - Dependent variable: under-5 mortality rate
 - Predictor 1: pct of population in urban areas
 - Predictor 2: mean ambient PM2.5 concentration
-- Control 1: log GDP per capita
+- Control 1: log GDP per capita (current US$)
 - Control 2: pct of primary-school-aged children enrolled in school
 - Control 3: population density per km²
 - Control 4: domestic general government health expenditure as pct of GDP
 - Control 5: number of doctors per 1000 people
 - Predictor 1 x Predictor 2: interaction term between urbanization pct and PM2.5 concentration variables
 
-Fit:
+Model details:
 
 - Dependent variable: under-5 mortality rate
 - Estimator: Fixed effects with entity and time effects (PanelOLS)
@@ -69,7 +71,7 @@ Results:
 
 **PowerPoint Presentation - Summarized Project Insights & Results:**
 
-[Air Pollution in Ethiopa - Short Form](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/blob/main/Air%20Pollution%20in%20Ethiopia%20-%20Short%20Form.pptx)
+[Air Pollution in Ethiopia - Short Form](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/blob/main/Air%20Pollution%20in%20Ethiopia%20-%20Short%20Form.pptx)
 
 ## Prerequisite
 
