@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This Python data project aims to examine air pollution exposure and its associated burden of disease in Ethiopia, especially in the context of urbanization, by addressing the three main questions below: 
+This Python data project and report aims to examine air pollution exposure and its associated burden of disease in Ethiopia, especially in the context of urbanization, by addressing the four main questions below: 
 
 1. How has Ethiopia's population trended over time and geographically, especially in the context of urbanization?
    
@@ -10,13 +10,15 @@ This Python data project aims to examine air pollution exposure and its associat
    
 3. What is the associated burden of disease caused by air pollution in Ethiopia? Have health outcomes improved or worsened?
 
+4. Beyond Ethiopia, what are the general effects of urbanization and air pollution, individually and at their interaction, on under-5 mortality rates?
+
 **Public Health and Policy Use Case:**
 
-The project ultimately seeks to provide data-informed policy and investment directions for the developing nation. In understanding where pollution exposure is highest, why that might be the case, and what impact it has on public health, policy directives and fund allocations can be more effectively geared to tackle air pollution in the country.
+The project ultimately seeks to provide data-informed policy and investment directions for the developing nation. In understanding where pollution exposure is highest, why that might be the case, and what impact it has on public health, policy directives and fund allocations can be more effectively geared to tackle air pollution in the country. The main body of work is structured as a report with research pulling data from multiple sources, key figures highlighting trends, and detailed write-ups explaining figures and walking through findings and policy recommendations. For a condensed PPT of the important findings, see [Air Pollution in Ethiopa - Short Form](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/blob/main/Air%20Pollution%20in%20Ethiopia%20-%20Short%20Form.pptx).
 
 ## Key Findings
 
-The project analyses highlighted important trends with regard to urbanization and demographic settlement, outdoor and indoor air pollution exposure, and associated health outcomes.
+The project analyses highlighted important trends with regard to urbanization and demographic settlement, outdoor and indoor air pollution exposure, and associated health outcomes. Additionally, a fixed effects regression model was used in tackling the 4th objective outlined above.
 
 **Identified areas of focus for policy and investment:**
 
@@ -26,12 +28,46 @@ The project analyses highlighted important trends with regard to urbanization an
 
 **Highlight Visualizations:**
 
-<img src="Visualizations/urban_trends.png" alt="urban_trends" width="1000"/>
-<img src="Visualizations/spatial_pm.png" alt="spatial_pm" width="700"/>
-<img src="Visualizations/addis_ababa_exposure.png" alt="aa_pm" width="1000"/>
-<img src="Visualizations/hh_exposure.png" alt="urban_trends" width="1000"/>
+<img src="visualizations/urban_trends.png" alt="urban_trends" width="1000"/>
+<img src="visualizations/spatial_pm.png" alt="spatial_pm" width="1000"/>
+<img src="visualizations/addis_ababa_exposure.png" alt="aa_pm" width="1000"/>
+<img src="visualizations/hh_exposure.png" alt="urban_trends" width="1000"/>
 
-**PowerPoint Presentation - Summarized Results:**
+**Regression Model**
+
+Variables:
+
+- Dependent variable: under-5 mortality rate
+- Predictor 1: pct of population in urban areas
+- Predictor 2: mean ambient PM2.5 concentration
+- Control 1: log GDP per capita
+- Control 2: pct of primary-school-aged children enrolled in school
+- Control 3: population density per km²
+- Control 4: domestic general government health expenditure as pct of GDP
+- Control 5: number of doctors per 1000 people
+- Predictor 1 x Predictor 2: interaction term between urbanization pct and PM2.5 concentration variables
+
+Fit:
+
+- Dependent variable: under-5 mortality rate
+- Estimator: Fixed effects with entity and time effects (PanelOLS)
+- Cov. Estimator: Clustered
+- Overall R²: 0.52
+- No. Observations: 1405
+- No. Entities: 164 
+- Time periods: 20
+- The model achieves statistical significance (F-statistic robust p-value < 0.001)
+
+<img src="visualizations/obs_pred_plot.png" alt="model" width="1000"/>
+
+Results:
+
+- Every 1 percentage point (pp) increase in urbanization is significantly associated with a **decrease of 0.61 deaths per 1000 live births** in under-5 mortality rate
+- Every 1 µg/m³ increase in mean ambient PM2.5 concentration is significantly associated with an **increase of 0.46 deaths per 1000 live births** in under-5 mortality rate
+- Every pp increase in urbanization above 0% is significantly associated with an additional mitigatory **decrease of 0.01 deaths per 1000 live births** in under-5 mortality rate related to mean ambient PM2.5 concentration
+
+
+**PowerPoint Presentation - Summarized Project Insights & Results:**
 
 [Air Pollution in Ethiopa - Short Form](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/blob/main/Air%20Pollution%20in%20Ethiopia%20-%20Short%20Form.pptx)
 
@@ -67,7 +103,18 @@ The [datasets](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/tree/main
 
 ## How to Use
 
-1. Download files: download the .ipynb and associated data files.
+1. Download files: download the .ipynb and associated data files [here](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia-Report/tree/main/data).
 2. Upload: upload to your local Jupyter Notebook environment.
 3. Run the script: [Analyzing Air Pollution and Associated Burden of Disease in Ethiopia.ipynb](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/blob/main/Analyzing%20Air%20Pollution%20and%20Associated%20Burden%20of%20Disease%20in%20Ethiopia.ipynb)
+
+## Limitations & Future Work
+
+The model, while decent at capturing the overall relationships, could be improved upon. The current model still leaves about half of the variance in under-5 mortality unexplained, and it tends to underestimate, especially at extreme values of the mortality rate; it's also possible there's a non-linear relationship present in these variables.
+
+One avenue of extending this work is further refining the model: exploring non-linear terms, other interactions terms, transformations of the various variables, etc. Additionally, it is also worth exploring why some variables had less intuitive relationships (e.g. an increase in physician concentration had a significant positive relationship with under-5 mortality).
+
+
+
+
+
 
