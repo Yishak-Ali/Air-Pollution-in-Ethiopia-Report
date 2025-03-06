@@ -28,12 +28,12 @@ The project analyses highlighted important trends with regard to urbanization an
 
 **Highlight Visualizations:**
 
-<img src="visualizations/urban_trends.png" alt="urban_trends" width="1000"/>
-<img src="visualizations/spatial_pm.png" alt="spatial_pm" width="1000"/>
-<img src="visualizations/addis_ababa_exposure.png" alt="aa_pm" width="1000"/>
-<img src="visualizations/hh_exposure.png" alt="urban_trends" width="1000"/>
+<img src="visualizations/urban_trends.png" alt="urban_trends" width="800"/>
+<img src="visualizations/spatial_pm.png" alt="spatial_pm" width="800"/>
+<img src="visualizations/addis_ababa_exposure.png" alt="aa_pm" width="800"/>
+<img src="visualizations/hh_exposure.png" alt="urban_trends" width="800"/>
 
-**Regression Model**
+**Regression Model:**
 
 Variables:
 
@@ -58,7 +58,7 @@ Fit:
 - Time periods: 20
 - The model achieves statistical significance (F-statistic robust p-value < 0.001)
 
-<img src="visualizations/obs_pred_plot.png" alt="model" width="1000"/>
+<img src="visualizations/obs_pred_plot.png" alt="model" width="800"/>
 
 Results:
 
@@ -84,7 +84,7 @@ Python with the following libraries:
 
 ## Data Sources
 
-The [datasets](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/tree/main/Data) used for this project are all publicly accessible and can be found along with any available documentation below:
+The [datasets](https://github.com/Yishak-Ali/Air-Pollution-in-Ethiopia/tree/main/data) used for this project are all publicly accessible and can be found along with any available documentation below:
 
 1) [Annual Population Estimates - UN Population Fund](https://pdp.unfpa.org/?_ga=2.228984607.246803807.1734063039-200135835.1734063039&country=231&data_id=dataSource_8-6%3A75%2CdataSource_8-1%3A2%2B10%2B11%2CdataSource_8-2%3A727%2CdataSource_8-5%3A2849&page=Explore-Indicators)
 2) [World Population Rate of Change - UN DESA](https://population.un.org/dataportal/data/indicators/51/locations/900/start/1980/end/2023/table/pivotbylocation?df=9468e38c-482d-4a1c-82b8-a5672388c740)
